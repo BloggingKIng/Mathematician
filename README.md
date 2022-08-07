@@ -24,24 +24,24 @@ Now answer all the questions and submit and you will be able to see the result:
 
 Create a superuser using `python manage.py createsuperuser`
 
-1. First add another card to home page linking to /quiz/quiz name/
+1. First add another card to home page linking to /quiz/quiz name/<br>
 
 ![image](https://user-images.githubusercontent.com/87518251/183301592-e1cf199f-771d-49ed-9014-1b28ea888855.png)
-Copy, Paste and Customize the above code for every new code
-2. Go to `127.0.0.1:8000/admin`
-3. Login with the credentials of super user
-4. Go Tests tab and create a new test with name equals to `QUIZ NAME` used in the link
+Copy, Paste and Customize the above code for every new code (especially change `href='/quiz/basic-statistics/'` to `href='/quiz/your new test name/'`)
+2. Go to `127.0.0.1:8000/admin`<br>
+3. Login with the credentials of super user<br>
+4. Go Tests tab and create a new test with name equals to `QUIZ NAME` used in the link<br>
  ![image](https://user-images.githubusercontent.com/87518251/183301142-563cbd16-59d5-47db-af07-687b7f897e32.png)
-5. Congrats you have created a new test
+5. Congrats you have created a new test <br>
 
 ## Add questions 
 
-1. Move to the questions model from sidebar and click on Add question
-2. You should see something like this
+1. Move to the questions model from sidebar and click on Add question <br>
+2. You should see something like this <br>
 ![image](https://user-images.githubusercontent.com/87518251/183301196-f2cb809a-9665-4bc3-a058-fb1924571a09.png)
-3. Type the question in the question text field (You can use html or plain text)
-4. Click on `Add Answers` to write choices
-5. Mark if a choice is correct or Not
-6. In the course field select to whic test question belong (Test Object 1, 2,3,4,....,etc)
+3. Type the question in the question text field (You can use html or plain text) <br>
+4. Click on `Add Answers` to write choices <br>
+5. Mark if a choice is correct or Not <br>
+6. In the course field select to whic test question belong (Test Object 1, 2,3,4,....,etc) <br>
 
 Click `SAVE` and you are done!
