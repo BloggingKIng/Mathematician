@@ -25,6 +25,9 @@ Now answer all the questions and submit and you will be able to see the result:
 Create a superuser using `python manage.py createsuperuser`
 
 1. First add another card to home page linking to /quiz/quiz name/
+
+![image](https://user-images.githubusercontent.com/87518251/183301592-e1cf199f-771d-49ed-9014-1b28ea888855.png)
+Copy, Paste and Customize the above code for every new code
 2. Go to `127.0.0.1:8000/admin`
 3. Login with the credentials of super user
 4. Go Tests tab and create a new test with name equals to `QUIZ NAME` used in the link
