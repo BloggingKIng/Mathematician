@@ -5,7 +5,7 @@ from .models import Test, Answer, Submission, Question
 
 class AnswerInline(admin.StackedInline):
     model= Answer
-    extra = 4
+    extra = 0
 
 class QuestionInline(admin.StackedInline):
     model= Question

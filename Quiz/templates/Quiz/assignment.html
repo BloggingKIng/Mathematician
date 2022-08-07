@@ -12,13 +12,30 @@
 
 </head>
 <body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" style="margin-right:50px;">
+            <img src="/media/logo.png">
+            <span class="fs-4">Mathematician Check</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../.." class="nav-link active" aria-current="page" style="margin: 40px; margin-bottom:0;">Home</a></li>
+
+          </ul>
+        </header>
+      </div>
 <div class="text-center">
     <h1>
-        {{test.name | upper}}
+        {{test.name | upper}} (Test)
+        
     </h1>
+    <figcaption class="blockquote-footer" style='font-size:1.3em;' style="margin:50px">
+        Grab a  Copy & Pencil! <cite title="Source Title">before starting..</cite>
+      </figcaption>
 </div>
 
-<form id="questionform">
+<form id="questionform" method='post' action="{% url 'quiz:solver' test.id %}">
     {% for question in test.question_set.all %}
             <div class="card mt-1">
                 <div class="card-header"><h5>{{ question.question_text | safe}}</h5></div>
@@ -27,9 +44,9 @@
                    {% for choice in question.answer_set.all %}
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="checkbox" name="choice_{{choice.choice_qs}}"
+                            <input type="checkbox" name="choice_{{choice.id}}"
                                    class="form-check-input" id="{{choice.id}}"
-                                   value="{{choice.id}}" required>{{ choice.choice_text | safe }}
+                                   value="{{choice.id}}">{{ choice.choice_text | safe }}
                         </label>
                     </div>{% endfor %}
                 </div>

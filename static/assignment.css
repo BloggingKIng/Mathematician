@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Staatliches&display=swap');
 
 body {
-    font-family:'Times New Roman', Times, serif
+    font-family:'Domine', serif;
 }
 
 label {
